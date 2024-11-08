@@ -85,7 +85,7 @@ By combining the two models, it is possible to represent the system from various
 
 ### **4. Domain Model**
 
-![Domain Model](../../DomainModel.png)
+![Domain Model](../../Globals/DomainModel.png)
 
 
 ### **5. Use Case Diagram**
