@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+title US22 - Remove an Operation Type
+
+
+:Admin: as Actor
+
+
+Actor -> (Remove an Operation Type)
+
+
+@enduml
