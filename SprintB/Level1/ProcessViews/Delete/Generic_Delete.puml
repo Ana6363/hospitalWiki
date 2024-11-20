@@ -1,0 +1,35 @@
+@startuml Process View - Level 1
+
+autonumber
+skinparam packageStyle rect
+
+title Delete {Resource}
+
+actor "User" as U <<DEI User>>
+participant "Hospital" as H <<system (C4)>>
+
+activate U
+
+U -> H:  Ask to delete {Resource}
+
+activate H
+
+U <-- H: displays confirmation message\n o delete {Resource} 
+
+U -> H:  Selects and submits {Resource} 
+
+alt
+
+U <-- H: displays success message
+
+else delete failed
+
+U <-- H: displays error message
+
+deactivate H
+
+end
+
+deactivate U
+
+@enduml

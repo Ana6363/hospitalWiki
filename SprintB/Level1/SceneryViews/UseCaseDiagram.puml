@@ -1,0 +1,64 @@
+@startuml 
+
+title Use Case Diagram
+
+left to right direction
+
+
+actor Administrator as adm
+
+adm --> (Register backoffice users)
+adm --> (Register patients)
+adm --> (Edit a patients profile)
+adm --> (Delete patients profile)
+adm --> (List/Search patients profiles)
+adm --> (Register staff)
+adm --> (Edit a staff's profile)
+adm --> (Deactivate a staff's profile)
+adm --> (List/Search staff profiles)
+adm --> (Add new operation types)
+adm --> (Edit operation types)
+adm --> (Remove operation types)
+adm --> (List/Search operation types)
+adm --> (Obtain the better scheduling of a set\n of operations in a certain operation room\n in a specific day)
+adm --> (Know till till what dimension in terms\n of number of surgeries is possible\n to ask for the better solution )
+adm --> (Obtain a good schedule)
+adm --> (Identify and quantify the risks involved in the recommended solution)
+
+actor Doctor as dc
+
+dc --> (Request an operation)
+dc --> (Update an operation request)
+dc --> (Remove an operation request)
+dc --> (List/Search all operation requests)
+
+actor StaffMember as sm
+
+sm --> (Visualize the 3D representation\n of the hospital/clinic floor)
+sm --> (See the appropriate textures\n mapped onto the floor, walls,\n and so on )
+sm --> (See the hospital/clinic floor iluminated\n with ambient and direction light)
+sm --> (Control the camera with the mouse)
+
+actor Patient as pt
+
+pt --> (Register into the healthcare application)
+pt --> (Update their profile)
+pt --> (Delete their profile)
+pt --> (Log in)
+
+actor BackofficeUser as bu
+
+bu --> (Log in)
+bu --> (Reset password)
+
+actor SystemAdministrator as sa
+
+sa --> (Deploy one of the RFP modules in a DEI VM)
+sa --> (Make only the clients on the DEI internal network\n to be able to access the solution)
+sa --> (Make the clients that were listed previously\n defined by changing a text file)
+sa --> (Define the MBCO to propose to stakeholders)
+sa --> (Define a public folder for all users registered on the system,\n where they can read whatever is places there)
+sa --> (Get all the users with more than 3 incorrect accesses attempts)
+
+
+@enduml

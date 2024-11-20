@@ -1,0 +1,36 @@
+@startuml Process View - Level 1
+
+autonumber
+skinparam packageStyle rect
+
+title Create {Resource}
+
+actor "User" as U <<DEI User>>
+participant "Hospital" as H <<system (C4)>>
+
+activate U
+
+U -> H:  Fills and submits the {Resource} Create Form
+
+activate H
+
+alt
+
+U <-- H: displays success message and updates the {Resource} list
+
+else required fields are missing
+
+U <-- H: displays warning message
+
+else invalid data provided
+
+U <-- H: displays error message
+deactivate H
+
+end
+
+deactivate U
+
+
+
+@enduml

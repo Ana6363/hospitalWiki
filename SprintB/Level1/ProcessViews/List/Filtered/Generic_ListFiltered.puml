@@ -1,0 +1,36 @@
+@startuml Process View - Level 1
+
+autonumber
+skinparam packageStyle rect
+
+title List Filtered {Resources}
+
+actor "User" as U <<DEI User>>
+participant "Hospital" as H <<system (C4)>>
+
+activate U
+
+U -> H:  Asks to list filtered {Resources}
+
+activate H
+
+U <-- H: Asks the user to select the filter
+
+U -> H:  Selects the filter
+
+U <-- H: Asks the user to select the filter values
+
+U -> H:  Input/select the filter values
+
+
+alt
+U <-- H: display filtered {Resources} list
+else no resources available
+U <-- H: display no filtered {Resources} message
+deactivate H
+end
+
+deactivate U
+
+
+@enduml
