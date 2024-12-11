@@ -1,0 +1,25 @@
+@startuml Process View - Level 1
+
+autonumber
+skinparam packageStyle rect
+
+title List All {Resources}
+
+participant "Hospital" as H <<system (C4)>>
+
+-> H:  onLoad {Resources} Page
+
+activate H
+
+alt
+
+  <-- H: display {Resources} list
+
+else no resources available
+
+  <-- H: display no {Resources} message
+
+deactivate H
+end
+
+@enduml

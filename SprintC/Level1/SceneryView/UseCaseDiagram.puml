@@ -1,0 +1,118 @@
+@startuml 
+
+title Use Case Diagram
+
+left to right direction
+
+
+actor Administrator as adm
+
+adm --> (Register backoffice users)
+adm --> (Register patients)
+adm --> (Edit a patients profile)
+adm --> (Delete patients profile)
+adm --> (List/Search patients profiles)
+adm --> (Register staff)
+adm --> (Edit a staff's profile)
+adm --> (Deactivate a staff's profile)
+adm --> (List/Search staff profiles)
+adm --> (Add new operation types)
+adm --> (Edit operation types)
+adm --> (Remove operation types)
+adm --> (List/Search operation types)
+adm --> (Obtain the better scheduling of a set\n of operations in a certain operation room\n in a specific day)
+adm --> (Know till till what dimension in terms\n of number of surgeries is possible\n to ask for the better solution )
+adm --> (Obtain a good schedule)
+adm --> (Identify and quantify the risks involved in the recommended solution)
+adm --> (Have the information about healthcare staff,\n operation types, and operation requests in sync \n with the information entered in the backoffice module)
+adm --> (Add a new allergy)
+adm --> (Add a new medical record)
+adm --> (Add new types of rooms)
+adm --> (Add a new specialization)
+adm --> (List/Search specializations)
+adm --> (Edit specializations)
+adm --> (Remove specializations)
+adm --> (Automatically assign a set of operations to several operation rooms)
+adm --> (Schedule several operations rooms using Genetic Algorithms)
+
+actor Doctor as dc
+
+dc --> (Request an operation)
+dc --> (Update an operation request)
+dc --> (Remove an operation request)
+dc --> (List/Search all operation requests)
+dc --> (Search for allergies)
+dc --> (Have access to the medical records of a patient)
+dc --> (Search for medical conditions)
+dc --> (Update the medical records of a patient)
+dc --> (Search for entries in the medical records of a patient)
+dc --> (Create a surgery appointement)
+dc --> (Update a surgery appointement)
+
+actor StaffMember as sm
+
+sm --> (Visualize the 3D representation\n of the hospital/clinic floor)
+sm --> (See the appropriate textures\n mapped onto the floor, walls,\n and so on )
+sm --> (See the hospital/clinic floor iluminated\n with ambient and direction light)
+sm --> (Control the camera with the mouse)
+sm --> (See the room availability in the 3D model in sync with the schedulling)
+sm --> (Select a room by left clicking on the surgical table)
+sm --> (When pressing the 'i' key, \n see/hide the information about the room)
+sm --> (When selecting a room the camera must move smoothly to the room)
+
+actor Patient as pt
+
+pt --> (Register into the healthcare application)
+pt --> (Update their profile)
+pt --> (Delete their profile)
+pt --> (Log in)
+pt --> (Download their medical history)
+pt --> (Request the deletation of their personal data)
+pt --> (Know how their data will be proccessed)
+pt --> (Know for how long their data will be kept)
+
+actor BackofficeUser as bu
+
+bu --> (Log in)
+bu --> (Reset password)
+
+actor User as us
+
+us --> (Have an integrated UI for all modules)
+us --> (The menu must ajust accordingly to their role)
+
+actor Customer as cu
+
+cu --> (Have a sales and technical presentation of the overall solution)
+
+actor HospitalManager as hm
+
+hm --> (Study the state of the art of application of Computer Vision in Hospitals,\n namely in the context of surgeries)
+
+actor SoftwareArchitect as soft
+
+soft --> (Adopt a descentralize architecture of the backoffice module)
+
+actor OrganizationAdministrator as oa
+
+oa --> (Have a disaster recovery plan)
+oa --> (Be presented with a justification for the\n changes to be made to the infrastruture\n in order to unsure a MTD)
+oa --> (Be presented with a BIA of the final solution)
+oa --> (Have access management implemented that meets the appropriate security criteria)
+oa --> (Have a clutering system implemented between the system that implements\n the SPA in a justified manner)
+
+
+actor SystemAdministrator as sa
+
+sa --> (Deploy one of the RFP modules in a DEI VM)
+sa --> (Make only the clients on the DEI internal network\n to be able to access the solution)
+sa --> (Make the clients that were listed previously\n defined by changing a text file)
+sa --> (Define the MBCO to propose to stakeholders)
+sa --> (Define a public folder for all users registered on the system,\n where they can read whatever is places there)
+sa --> (Get all the users with more than 3 incorrect accesses attempts)
+sa --> (Make a backup copy of the DB's to a Cloud enviroment)
+sa --> (Have a script that using the backup prepared previously,\n to manage the files)
+sa --> (Have the proccess of the DB backup to be kept in the linux log)
+sa --> (The backup of the DB backup must have a lifetime of no more than 7 days)
+
+@enduml
