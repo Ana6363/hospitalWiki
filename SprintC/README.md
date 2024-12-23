@@ -78,7 +78,7 @@ By combining the two models, it is possible to represent the system from various
 
 
 ## **Logical View**
-![Logical View Level 1](Level1/LogicalView.PNG)
+![Logical View Level 1](Level1/LogicalView.png)
 
 
 
@@ -133,13 +133,24 @@ By combining the two models, it is possible to represent the system from various
 ![List Process View](Level3/ProcessViews/US6.2.17/US6.2.17.svg)
 
 
-## **Logical View**
-![Logical View Level 3](Level3/LogicalView.PNG)
+## **Logical View Back Office Module**
+![Logical View Level 3](Level3/BO/LogicalViewBO.PNG)
 
 
-## **Deployment View**
-![Deployment View Level 3](Level3/DeploymentView.jpg)
+## **Deployment View Back Office Module**
+![Deployment View Level 3](Level3/BO/DeploymentViewBO.jpg)
 
+
+## **Logical View Data Administration Module**
+![Logical View Level 3](Level3/DA/LogicalViewDA.PNG)
+
+
+## **Logical View SPA**
+![Logical View Level 3](Level3/SPA/LogicalViewSPA.PNG)
+
+
+## **Logical View Planning Module**
+![Logical View Level 3](Level3/PM/LogicalViewPM.PNG)
 
 
 ### **4. Domain Model**
