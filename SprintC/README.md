@@ -107,7 +107,7 @@ By combining the two models, it is possible to represent the system from various
 
 
 ## **Deployment View**
-![Deployment View Level 2](Level2/DeploymentView.jpg)
+![Deployment View Level 2](Level2/DeploymentView.PNG)
 
 
 ## **Physical View**
@@ -145,8 +145,16 @@ By combining the two models, it is possible to represent the system from various
 ![Logical View Level 3](Level3/DA/LogicalViewDA.PNG)
 
 
+## **Deployment View Data Administration Module**
+![Deployment View Level 3](Level3/DA/DeploymentViewDA.png)
+
+
 ## **Logical View SPA**
 ![Logical View Level 3](Level3/SPA/LogicalViewSPA.PNG)
+
+
+## **Deployment View SPA**
+![Deployment View Level 3](Level3/SPA/DeploymentViewSPA.png)
 
 
 ## **Logical View Planning Module**
